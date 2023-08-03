@@ -1,0 +1,71 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                    lion_01.jpg  label:                       lion
+ 2 key:                football_01.jpg  label:                   football
+ 3 key:                     dog_02.jpg  label:                        dog
+ 4 key:                     dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                   lion_01.jpg: 
+Real:                       lion   Classifier: lion, king of beasts, panthera leo
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+               football_01.jpg: 
+Real:                   football   Classifier:                       baseball
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+{'lion_01.jpg': ['lion', 'lion, king of beasts, panthera leo', 1, 0, 0], 'football_01.jpg': ['football', 'baseball', 0, 0, 0], 'dog_02.jpg': ['dog', 'german shepherd, german shepherd dog, german police dog, alsatian', 1, 1, 1], 'dog_01.jpg': ['dog', 'german shepherd, german shepherd dog, german police dog, alsatian', 1, 1, 1]}
+
+     MATCH:
+
+                   lion_01.jpg: 
+Real:                       lion   Classifier: lion, king of beasts, panthera leo  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+               football_01.jpg: 
+Real:                   football   Classifier:                       baseball  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 3 # NOT Matches: 1
+{'n_correct_dogs': 2, 'n_dogs_img': 2, 'pct_correct_dogs': 100.0, 'n_correct_notdogs': 2, 'n_notdogs_img': 2, 'pct_correct_notdogs': 100.0, 'n_correct_breed': 2, 'pct_correct_breed': 100.0, 'n_match': 3, 'n_images': 4, 'pct_match': 75.0}
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+*** Results Summary for vgg
+The number of images = 4
+The number of dog images = 2
+The number of not dog images = 2
+Percentage: pct_correct_dogs = 100.0
+Percentage: pct_correct_notdogs = 100.0
+Percentage: pct_correct_breed = 100.0
+Percentage: pct_match = 75.0
+
+** Total Elapsed Runtime: 0:0:8

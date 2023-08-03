@@ -1,0 +1,20 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: Yes, all the models classified the image correctly.
+
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: Yes, all the models classified the dog_01 and dog_02 images the same.
+
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: Yes, the model identified both images as "not dogs".
+
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer: All three models performed equally well classifying the the two dog images, the football image, and the lion image.    The only difference in the models was the speed.  Alexnet was the fastest and VGG was the slowest.  Based on the small sample time, all models performed equally well.  I think I will try modifying the dog images (make then lighter/darker, blurry, and crop part of the image) to see if there are any differences.
